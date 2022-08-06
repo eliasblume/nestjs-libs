@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-mailjet",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "nestjs-mailjet_v0.1.0",
+      "date": "Sat, 06 Aug 2022 00:36:09 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "initial release (test)"
+          }
+        ]
+      }
+    }
+  ]
+}
