@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-mailjet",
-  "version": "0.0.0",
+  "name": "nest-mailjet",
+  "version": "0.2.0",
   "description": "nest js mailjet-node wrapper module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
