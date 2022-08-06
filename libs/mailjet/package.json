@@ -5,6 +5,7 @@
   homepage: "https://www.npmjs.com/package/nest-mailjet",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "author": "Elias Blume",
   "license": "MIT",
   "keywords": [
     "nestjs",
@@ -13,7 +14,7 @@
     "mailjet-node"
   ],
   "bugs": {
-    "url": ""
+    "url": "https://github.com/eliasblume/nestjs-libs/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
