@@ -1,5 +1,5 @@
 import { Controller, Get, Query } from '@nestjs/common'
-import { MailjetService } from 'nest-mailjet'
+import { MailjetService, SendEmailV3_1 } from 'nest-mailjet'
 
 @Controller()
 export class AppController {
@@ -9,7 +9,7 @@ export class AppController {
     async send(
         @Query('senderAddress') senderAddress: string,
         @Query('recipientAddress') recipientAddress: string
-    ) {
+    ): Promise<SendEmailV3_1.ResponseStatus> {
         const repl = await this.mailjetService.send({
             Messages: [
                 {
@@ -26,7 +26,7 @@ export class AppController {
                 },
             ],
         })
-        console.log(repl.body)
-        return
+
+        return repl.body.Messages[0].Status
     }
 }

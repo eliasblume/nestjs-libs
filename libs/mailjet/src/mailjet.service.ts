@@ -1,9 +1,10 @@
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common'
-import Mailjet, { Common, SendEmailV3_1 } from 'node-mailjet'
+import Mailjet, { Common, ILibraryResponse, SendEmailV3_1 } from 'node-mailjet'
 import { MODULE_OPTIONS_TOKEN } from './mailjet.module-definitons'
 import { MailjetModuleOptions } from './interfaces/mailjet-module-options.interface'
 import { MailjetApiResource, mailjetApiVersion } from './constants'
 import TUnknownRec = Common.TUnknownRec
+import { MailjetSendResponse } from './interfaces/mailjet-service.interface'
 
 @Injectable()
 export class MailjetService {
@@ -13,10 +14,11 @@ export class MailjetService {
         this.client = new Mailjet(options)
     }
 
-    async send(messages: SendEmailV3_1.IBody) {
+    async send(messages: SendEmailV3_1.IBody): Promise<MailjetSendResponse> {
+        // unfortunately types are not set correctly for Mailjet.send()
         const data: TUnknownRec = messages as unknown as TUnknownRec
-        return await this.client
+        return (await this.client
             .post(MailjetApiResource.SEND, { version: mailjetApiVersion })
-            .request(data)
+            .request(data)) as unknown as MailjetSendResponse
     }
 }

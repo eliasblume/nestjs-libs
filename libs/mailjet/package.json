@@ -2,7 +2,7 @@
   "name": "nest-mailjet",
   "version": "0.2.0",
   "description": "nest js mailjet-node wrapper module",
-  homepage: "https://www.npmjs.com/package/nest-mailjet",
+  "homepage": "https://www.npmjs.com/package/nest-mailjet",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Elias Blume",
