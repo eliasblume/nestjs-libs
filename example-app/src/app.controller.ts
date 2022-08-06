@@ -1,5 +1,5 @@
 import { Controller, Get, Query } from '@nestjs/common'
-import { MailjetService } from 'nestjs-mailjet'
+import { MailjetService } from 'nest-mailjet'
 
 @Controller()
 export class AppController {

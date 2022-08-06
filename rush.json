@@ -447,7 +447,7 @@
     // },
     // 
      {
-       "packageName": "nestjs-mailjet",
+       "packageName": "nest-mailjet",
        "projectFolder": "libs/mailjet",
        "reviewCategory": "lib",
        "shouldPublish": true

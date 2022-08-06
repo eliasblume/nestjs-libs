@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
 import { AppController } from './app.controller'
-import { MailjetModule } from 'nestjs-mailjet'
+import { MailjetModule } from 'nest-mailjet'
 
 @Module({
     imports: [
