@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ffmpeg-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "nestjs ffmpeg utils using fluent-ffmpeg",
   "homepage": "https://www.npmjs.com/package/nestjs-ffmpeg-utils",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
     "fluent-ffmpeg",
     "ffprobe",
     "video",
-    "thumbnail",
+    "thumbnail"
   ],
   "bugs": {
     "url": "https://github.com/eliasblume/nestjs-libs/issues"
