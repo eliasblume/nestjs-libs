@@ -11,7 +11,11 @@
     "nestjs",
     "nest",
     "ffmpeg",
-    "fluent-ffmpeg"
+    "fluent-ffmpeg",
+    "ffmpeg-utils",
+    "ffprobe",
+    "video",
+    "thumbnail",
   ],
   "bugs": {
     "url": "https://github.com/eliasblume/nestjs-libs/issues"
