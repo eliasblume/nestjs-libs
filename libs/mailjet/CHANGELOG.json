@@ -1,26 +1,14 @@
 {
-  "name": "nest-mailjet",
+  "name": "nestjs-mailjet",
   "entries": [
     {
-      "version": "0.3.0",
-      "tag": "nest-mailjet_v0.3.0",
-      "date": "Sat, 06 Aug 2022 01:48:44 GMT",
+      "version": "0.1.0",
+      "tag": "nestjs-mailjet_v0.1.0",
+      "date": "Sat, 06 Aug 2022 00:36:09 GMT",
       "comments": {
         "minor": [
           {
-            "comment": "overwite response"
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.2.1",
-      "tag": "nest-mailjet_v0.2.1",
-      "date": "Sat, 06 Aug 2022 01:32:39 GMT",
-      "comments": {
-        "patch": [
-          {
-            "comment": "fix"
+            "comment": "initial release (test)"
           }
         ]
       }

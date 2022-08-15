@@ -1,11 +1,9 @@
 {
-  "name": "nest-mailjet",
-  "version": "0.3.0",
+  "name": "nestjs-mailjet",
+  "version": "0.1.0",
   "description": "nest js mailjet-node wrapper module",
-  "homepage": "https://www.npmjs.com/package/nest-mailjet",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "author": "Elias Blume",
   "license": "MIT",
   "keywords": [
     "nestjs",
@@ -14,7 +12,7 @@
     "mailjet-node"
   ],
   "bugs": {
-    "url": "https://github.com/eliasblume/nestjs-libs/issues"
+    "url": ""
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

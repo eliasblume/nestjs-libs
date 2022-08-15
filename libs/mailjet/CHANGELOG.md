@@ -1,18 +1,11 @@
-# Change Log - nest-mailjet
+# Change Log - nestjs-mailjet
 
-This log was last generated on Sat, 06 Aug 2022 01:48:44 GMT and should not be manually modified.
+This log was last generated on Sat, 06 Aug 2022 00:36:09 GMT and should not be manually modified.
 
-## 0.3.0
-Sat, 06 Aug 2022 01:48:44 GMT
+## 0.1.0
+Sat, 06 Aug 2022 00:36:09 GMT
 
 ### Minor changes
 
-- overwite response
-
-## 0.2.1
-Sat, 06 Aug 2022 01:32:39 GMT
-
-### Patches
-
-- fix
+- initial release (test)
 
