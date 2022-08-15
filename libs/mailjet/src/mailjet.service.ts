@@ -16,9 +16,14 @@ export class MailjetService {
 
     async send(messages: SendEmailV3_1.IBody): Promise<MailjetSendResponse> {
         // unfortunately types are not set correctly for Mailjet.send()
+        // https://www.npmjs.com/package/node-mailjet
         const data: TUnknownRec = messages as unknown as TUnknownRec
         return (await this.client
             .post(MailjetApiResource.SEND, { version: mailjetApiVersion })
             .request(data)) as unknown as MailjetSendResponse
+    }
+
+    async sendOne(message: SendEmailV3_1.IMessage): Promise<SendEmailV3_1.IResponseMessage> {
+        return (await this.send({ Messages: [message] })).body.Messages[0]
     }
 }

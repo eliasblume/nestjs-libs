@@ -1,37 +1,45 @@
+# `nestjs-ffmpeg-utils`
+
+## Installation
+
+```
+npm i nestjs-ffmpeg-utils
+```
+
+## Features
+- [x] get thumbnail from video
+- [x] get ffprobe info from video or image
+- [x] get aspect ratio from video or image
+
+
+## Usage
+```typescript
+@Module({
+    imports: [
+        FfmpegUtilsModule
+    ],
+    controllers: [AppController],
+})
+export class AppModule {}
+```
+
+
+
+### use service example
+```typescript
 import { Controller, Get, Query, StreamableFile, Response } from '@nestjs/common'
-import { MailjetService, SendEmailV3_1 } from 'nest-mailjet'
 import { FfmpegUtilsService } from 'nestjs-ffmpeg-utils'
 import { HttpService } from '@nestjs/axios'
 import { firstValueFrom } from 'rxjs'
 import { ApiQuery, ApiResponse } from '@nestjs/swagger'
+
 @Controller()
 export class AppController {
     constructor(
-        private readonly mailjetService: MailjetService,
         private readonly ffmpegUtils: FfmpegUtilsService,
         private readonly httpService: HttpService
     ) {}
-
-    @Get('send')
-    async send(
-        @Query('senderAddress') senderAddress: string,
-        @Query('recipientAddress') recipientAddress: string
-    ): Promise<SendEmailV3_1.ResponseStatus> {
-        const repl = await this.mailjetService.sendOne({
-            From: {
-                Email: senderAddress,
-            },
-            To: [
-                {
-                    Email: recipientAddress,
-                },
-            ],
-            Subject: 'nestjs test mail',
-            TextPart: 'nestjs test mail content',
-        })
-
-        return repl.Status
-    }
+    
 
     @Get('ffmpeg/ffprobe')
     @ApiQuery({ name: 'url', description: 'image/video url' })
@@ -58,3 +66,8 @@ export class AppController {
         return new StreamableFile(await this.ffmpegUtils.getThumbnail(get.data), { type: 'image/jpeg' })
     }
 }
+
+```
+
+## Example
+look [here](https://github.com/eliasblume/nestjs-libs) for an example implementation

@@ -452,12 +452,19 @@
        "reviewCategory": "lib",
        "shouldPublish": true
      },
+    {
+      "packageName": "nestjs-ffmpeg-utils",
+      "projectFolder": "libs/ffmpeg-utils",
+      "reviewCategory": "lib",
+      "shouldPublish": true
+    },
 
     {
       "packageName": "example-app",
       "projectFolder": "example-app",
       "reviewCategory": "app"
     },
+
     // 
     // {
     //   "packageName": "my-toolchain",

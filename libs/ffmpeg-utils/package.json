@@ -1,0 +1,46 @@
+{
+  "name": "nestjs-ffmpeg-utils",
+  "version": "0.1.0",
+  "description": "nestjs ffmpeg utils using fluent-ffmpeg",
+  "homepage": "https://www.npmjs.com/package/nestjs-ffmpeg-utils",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Elias Blume",
+  "license": "MIT",
+  "keywords": [
+    "nestjs",
+    "nest",
+    "ffmpeg",
+    "fluent-ffmpeg"
+  ],
+  "bugs": {
+    "url": "https://github.com/eliasblume/nestjs-libs/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "publicConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nest build",
+    "prepublishOnly": "rushx build"
+  },
+  "dependencies": {
+    "@nestjs/common": "~9.0.8",
+    "@nestjs/core": "~9.0.8",
+    "reflect-metadata": "~0.1.13",
+    "rxjs": "^7.1.0",
+    "fluent-ffmpeg": "~2.1.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "~9.0.0",
+    "@nestjs/schematics": "~9.0.1",
+    "@types/node": "^16.11.7",
+    "typescript": "^4.5.4",
+    "@types/fluent-ffmpeg": "~2.1.20"
+  }
+}
