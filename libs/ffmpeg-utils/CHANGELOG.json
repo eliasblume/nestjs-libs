@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-ffmpeg-utils",
+  "entries": [
+    {
+      "version": "0.2.0",
+      "tag": "nestjs-ffmpeg-utils_v0.2.0",
+      "date": "Mon, 15 Aug 2022 22:17:34 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "fix 2"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ffmpeg-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "nestjs ffmpeg utils using fluent-ffmpeg",
   "homepage": "https://www.npmjs.com/package/nestjs-ffmpeg-utils",
   "main": "dist/index.js",
