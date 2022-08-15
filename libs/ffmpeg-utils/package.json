@@ -12,7 +12,6 @@
     "nest",
     "ffmpeg",
     "fluent-ffmpeg",
-    "ffmpeg-utils",
     "ffprobe",
     "video",
     "thumbnail",
